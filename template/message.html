@@ -1,0 +1,5 @@
+<div class="alert alert-{{status}}">
+    <h5 id="alert-heading">{{message}}</h5>
+    <div id="alert-content">正在返回，请稍候...</div>
+</div>
+<script type="text/javascript">var url='{{url}}';var chk='{{status}}';if(chk==='danger'){document.getElementById('alert-content').innerHTML='正在退出，请稍候...';setTimeout(function(){location.href='?action=exit'},1000)}else if(url){setTimeout(function(){if(url=='-1'){history.back()}else{location.href=url}},1000)}else{document.getElementById('alert-content').style.display='none'}</script>

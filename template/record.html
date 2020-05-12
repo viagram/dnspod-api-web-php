@@ -1,0 +1,15 @@
+<div class="add-domain-group">
+    <input type="button" class="btn btn-secondary" value="返回域名" onclick="location.href='?action=domainlist'" />
+    <input type="button" class="btn btn-secondary" value="添加记录" onclick="location.href='?action=recordcreatef&domain_id={{domain_id}}&grade={{grade}}'" />
+    <input type="button" class="btn btn-secondary" value="退出系统" onclick="location.href='?action=exit'" />
+</div>
+<table class="table hovered table-striped">
+    <thead>
+        <tr>
+            <th>编号</th><th>子域名</th><th>类型</th><th>线路</th><th>记录值</th><th>状态</th><th>MX</th><th>TTL</th><th>备注</th><th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{list}}
+    </tbody>
+</table>
